@@ -1,0 +1,140 @@
+h1, h2, h3, h4, h5, h6 {
+}
+
+body{
+    background-image: url(../img/teambg.bmp);
+}
+
+.site-heading h2 {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.site-heading h2 span {
+  color: #ff5a6e;
+}
+
+.site-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.site-heading h4::before {
+  background: #ff5a6e none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.site-heading h2 span {
+  color: #ff5a6e;
+}
+
+.site-heading {
+  margin-bottom: 60px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-global-notreEquipe{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-people, .content-people img{
+    width: 240px;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.content-people{
+    height: 320px;
+    margin: 0px 20px;
+}
+
+.content-text{
+    background: rgba(237, 237, 237, 1);
+    font-family: "Roboto Condensed",sans-serif;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -60px;
+    transition: 0.5s;
+}
+
+.arrow-content{
+    background: rgba(237, 237, 237, 1);
+    color: #b1b1b1;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50px;
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-size: 30px;
+}
+
+.textes{
+    position: relative;
+    top: -45px;
+}
+
+.textes h3, h4{
+    margin-bottom: 15px;
+}
+
+.textes .description{
+    color: #727272;
+    position: relative;
+    top: 10px;
+}
+
+.content-social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-social i{
+    border: 1px solid #b1b1b1;
+    color: #b1b1b1;
+    padding: 5px 10px;
+}
+
+.content-social i:hover{
+    border: 1px solid rgb(48, 147, 37);
+    color: rgb(48, 147, 37);
+    cursor: pointer;
+}
+
+.content-people:hover .content-text{
+    top: -400px;
+    transition: 1.0s;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .content-global-notreEquipe{
+        display: block;
+    }
+    
+    .content-people{
+        margin: 0 auto;
+    }
+}
